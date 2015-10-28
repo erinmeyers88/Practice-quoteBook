@@ -13,14 +13,9 @@ angular.module("quoteBook")
 			if ($scope.newQuote.text) {
 				$scope.quotes = dataService.addData($scope.newQuote);
 				$scope.newQuote = {};
-				//$scope.showNewInput = false;
 			}
 		}
 		
-		
-		$scope.remove = function () {
-			$scope.removeQuote = dataService.removeData();
-		}
 		
 		
 	});

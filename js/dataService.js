@@ -10,22 +10,19 @@ angular.module("quoteBook")
     { text: 'What even is a jQuery?', author: 'Tyler S. McGinnis'}
   ];
 		this.getData = function () {
+			if (localStorage.quotes) {
+    		quotes = JSON.parse(localStorage.getItem("quotes"));
+  			}
 			return quotes;
 		};
 		
 		this.addData = function (data) {
 			if (data.text && data.author) {
 				quotes.unshift(data);
+				localStorage.setItem("quotes", JSON.stringify(quotes));
 			}
+			
 			return quotes;
-		};
-		
-		this.removeData = function (sample) {
-			for (var i = 0; i < quotes.length; i++ ) {
-				if (sample === quotes[i].text) {
-					quotes.slice(i, i+1)	
-				}
-			}	
 		};
 		
 		
