@@ -16,17 +16,23 @@ angular.module("quoteBook")
 			return quotes;
 		};
 		
+		
 		this.addData = function (data) {
 			if (data.text && data.author) {
 				quotes.unshift(data);
 				localStorage.setItem("quotes", JSON.stringify(quotes));
 			}
-			
 			return quotes;
 		};
 		
 		
-		
+		// this.removeData = function (data) {
+		// 	var index = quotes.indexOf(data);
+		// 	quotes.splice(index,1);
+		// 	localStorage.setItem("quotes", JSON.stringify(quotes));
+		// }
+		// 	return quotes;
+		// };
 		
 		
 		

@@ -43,7 +43,6 @@ h1 {
 	justify-content: center;
 	margin: 10px;
 	align-items: center;
-	height: 75px;
 	
 }
 
@@ -51,12 +50,17 @@ h1 {
 	color: mintcream;
 	font-family: cursive;
 	font-size: 20px;
+	width: 60%;
+	text-align: center;
+	margin: 5px
+
 }
 
 .authorName {
 	color: black;
 	font-family: cursive;
 	font-size: 18px;
+	margin: 2px
 }
 
 .buttonArea {
