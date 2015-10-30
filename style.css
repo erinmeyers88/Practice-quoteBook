@@ -10,8 +10,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	align-content: center;
-	background-image: url(/Users/erinmeyers/Documents/DevMountain/Week3/Day2/Projects/Practice-quoteBook/paisley.png)
+	background-image: url(/Users/erinmeyers/Documents/DevMountain/Week3/Day2/Projects/Practice-quoteBook/paisley.png);
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
@@ -23,7 +25,8 @@ h1 {
 	height: 100px;
 	display: flex;
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
+	opacity: .6	
 }
 
 .quoteSection {
@@ -31,6 +34,8 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+
 	
 }
 
@@ -39,28 +44,59 @@ h1 {
 	border: 5px;
 	border-radius: 5px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
 	margin: 10px;
+	width: 100%;
+	justify-content: center;
 	align-items: center;
+
 	
+}
+
+.quoteGroup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+
+
 }
 
 .quoteText {
 	color: mintcream;
 	font-family: cursive;
 	font-size: 20px;
-	width: 60%;
+	margin: 10px;
 	text-align: center;
-	margin: 5px
-
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 
 .authorName {
 	color: black;
 	font-family: cursive;
 	font-size: 18px;
-	margin: 2px
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.side {
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-close {
+	color: #434343;
 }
 
 .buttonArea {
@@ -110,3 +146,4 @@ h1 {
 	font-size: 20px;
 	width: 200px;
 }
+

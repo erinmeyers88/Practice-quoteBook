@@ -1,5 +1,7 @@
 angular.module("quoteBook")
 	.service("dataService", function () {
+		
+		
 		var quotes = [
     { text: 'Life isn\'t about getting and having, it\'s about giving and being.', author: 'Kevin Kruse'},
     { text: 'Whatever the mind of man can conceive and believe, it can achieve', author: 'Napoleon Hill'},
@@ -26,14 +28,19 @@ angular.module("quoteBook")
 		};
 		
 		
-		// this.removeData = function (data) {
-		// 	var index = quotes.indexOf(data);
-		// 	quotes.splice(index,1);
-		// 	localStorage.setItem("quotes", JSON.stringify(quotes));
-		// }
-		// 	return quotes;
-		// };
+		this.removeQuote = function (quoteToRemove) {
+		
+			if(window.confirm("Are you sure you want to delete this quote?")) {
+				
+				quotes.splice(quotes.indexOf(quoteToRemove), 1);
+				localStorage.setItem("quotes", JSON.stringify(quotes));
+				return quotes;
+				};
+				
+			}
+			
+			
 		
 		
 		
-	});
+});
